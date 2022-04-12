@@ -24,6 +24,7 @@ Pod::Spec.new do |spec|
   spec.dependency 'QuecUserKit', '~>1.0.0'
   spec.dependency 'QuecDeviceKit', '~>1.0.0'
   spec.dependency 'QuecCommonKit', '~>1.0.0'
+  spec.dependency 'QuecBleChannelKit', '~>1.0.0'
   spec.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
   spec.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
   
