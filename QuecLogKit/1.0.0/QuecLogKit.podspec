@@ -19,6 +19,8 @@ Pod::Spec.new do |spec|
   spec.static_framework = true
   spec.source       = { :http => "https://quec-saas-app.oss-cn-shanghai.aliyuncs.com/sdk/#{spec.name}-#{spec.version}.zip", :type => "zip" }
   spec.ios.vendored_frameworks = "QuecLogKit/QuecLogKit.framework"
+  spec.frameworks = "CoreTelephony","SystemConfiguration"
+  spec.libraries = "c++","z","resolv.9"
   spec.source_files = "QuecLogKit/QuecLogKit.framework/Headers/*.h"
   spec.public_header_files = "QuecLogKit/QuecLogKit.framework/Headers/*.h"
   spec.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
