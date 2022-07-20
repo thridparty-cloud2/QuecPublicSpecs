@@ -23,6 +23,7 @@ Pod::Spec.new do |spec|
   spec.public_header_files = "QuecUserKit/QuecUserKit.framework/Headers/*.h"
   spec.dependency 'QuecNetworkChannelKit', '~>1.0.0'
   spec.dependency 'QuecCommonKit', '~>1.0.0'
+  spec.dependency 'YYModel', '~>1.0.4'
   spec.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
   spec.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
   
