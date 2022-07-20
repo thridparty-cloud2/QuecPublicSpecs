@@ -22,7 +22,7 @@ Pod::Spec.new do |spec|
   spec.source_files = "QuecNetworkChannelKit/QuecNetworkChannelKit.framework/Headers/*.h"
   spec.public_header_files = "QuecNetworkChannelKit/QuecNetworkChannelKit.framework/Headers/*.h"
   spec.dependency 'AFNetworking', '~>4.0.1'
-  spec.dependency 'QuecCommonKit', '~>1.0.0'
+  spec.dependency 'QuecCommonKit', '~>1.1.0'
   spec.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
   spec.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
   
