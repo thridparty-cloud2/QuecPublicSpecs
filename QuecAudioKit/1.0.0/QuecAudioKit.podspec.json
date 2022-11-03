@@ -1,0 +1,32 @@
+{
+    "name": "QuecAudioKit",
+    "version": "1.0.0",
+    "summary": "A short description of QuecAudioKit.",
+    "description": "TODO: Add long description of the pod here.",
+    "homepage": "http://gitlab.quectel.com:8108/frontend/app/QuecAudioKit",
+    "license": {
+        "type": "MIT",
+        "file": "LICENSE"
+    },
+    "authors": {
+        "QUEC_CI": "cloud-cicd@quectel.com"
+    },
+    "platforms": {
+        "ios": "11.0"
+    },
+    "pod_target_xcconfig": {
+        "EXCLUDED_ARCHS[sdk=iphonesimulator*]": "arm64"
+    },
+    "user_target_xcconfig": {
+        "EXCLUDED_ARCHS[sdk=iphonesimulator*]": "arm64"
+    },
+    "source": {
+        "http": "http://quec-saas-app.oss-cn-shanghai.aliyuncs.com/sdk/QuecAudioKit-1.0.0.zip",
+        "type": "zip"
+    },
+    "static_framework": true,
+    "ios": {
+        "vendored_frameworks": "Example/build/QuecAudioKit.xcframework"
+    },
+    "public_header_files": "QuecAudioKit/**/*.h"
+}
