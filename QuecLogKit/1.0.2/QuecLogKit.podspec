@@ -7,16 +7,16 @@
 #
 
 Pod::Spec.new do |spec|
-  
+
   spec.name         = "QuecLogKit"
-  spec.version      = "1.0.0"
+  spec.version      = "1.0.2"
   spec.summary      = "QuecLogKit is log kit"
   spec.homepage     = "https://www.quectel.com"
   spec.license      = "none"
   # spec.license      = { :type => "MIT", :file => "FILE_LICENSE" }
   spec.author             = { "quectel.steven" => "steven.xia@quectel.com" }
   spec.ios.deployment_target = "10.0"
-  spec.source       = { :git => "http://192.168.23.184:8108/frontend/app/IOSSDK/QuecLogKit.git", :tag => "master" }
+  spec.source       = { :git => "ssh://git@gitlab.quectel.com:8061/frontend/app/IOSSDK/QuecLogKit.git", :tag => "#{spec.version}"  }
   spec.frameworks = "CoreTelephony","SystemConfiguration"
   spec.libraries = "c++","z","resolv.9"
   spec.source_files = "QuecLogKit/*.{h,m,mm}"
@@ -31,7 +31,7 @@ Pod::Spec.new do |spec|
         end
         sss.subspec 'xlog' do |ssss|
           ssss.source_files = "QuecLogKit/XLog/Headers/xlog/*.{h,m,mm}"
-        end     
+        end
     end
   end
 end
