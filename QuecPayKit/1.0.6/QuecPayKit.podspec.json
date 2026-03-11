@@ -1,0 +1,63 @@
+{
+  "name": "QuecPayKit",
+  "version": "1.0.6",
+  "summary": "A short description of QuecPayKit.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "http://gitlab.quectel.com:8108/frontend/app/QuecPayKit",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "QUEC_CI": "cloud-cicd@quectel.com"
+  },
+  "source": {
+    "http": "http://quec-cicd-oss.oss-cn-shanghai.aliyuncs.com/xc/QuecPayKit1773191287.zip",
+    "type": "zip"
+  },
+  "platforms": {
+    "ios": "14.0"
+  },
+  "swift_versions": "5.0",
+  "static_framework": true,
+  "dependencies": {
+    "QuecLogKit": [],
+    "QuecFoundationKit": []
+  },
+  "default_subspecs": "default",
+  "pod_target_xcconfig": {
+    "EXCLUDED_ARCHS[sdk=iphonesimulator*]": "arm64",
+    "OTHER_LDFLAGS": "-ObjC"
+  },
+  "user_target_xcconfig": {
+    "EXCLUDED_ARCHS[sdk=iphonesimulator*]": "arm64",
+    "OTHER_LDFLAGS": "-ObjC"
+  },
+  "subspecs": [
+    {
+      "name": "default",
+      "dependencies": {
+        "QuecPayKit/common": []
+      }
+    },
+    {
+      "name": "common"
+    },
+    {
+      "name": "wechat",
+      "dependencies": {
+        "WechatOpenSDK-XCFramework": [],
+        "QuecPayKit/common": []
+      }
+    },
+    {
+      "name": "paypal",
+      "dependencies": {
+        "PayPal/PayPalWebPayments": [],
+        "QuecPayKit/common": []
+      }
+    }
+  ],
+  "swift_version": "5.0",
+  "vendored_frameworks": "QuecPayKit/**/*.xcframework"
+}
