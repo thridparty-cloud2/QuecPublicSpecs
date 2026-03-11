@@ -12,7 +12,7 @@
     "QUEC_CI": "cloud-cicd@quectel.com"
   },
   "source": {
-    "http": "http://quec-cicd-oss.oss-cn-shanghai.aliyuncs.com/xc/QuecPayKit1773191287.zip",
+    "http": "http://quec-cicd-oss.oss-cn-shanghai.aliyuncs.com/xc/QuecPayKit1773194955.zip",
     "type": "zip"
   },
   "platforms": {
