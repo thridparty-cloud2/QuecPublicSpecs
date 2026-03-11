@@ -19,7 +19,7 @@
     "ios": "14.0"
   },
   "swift_versions": "5.0",
-  "static_framework": true,
+  "static_framework": false,
   "dependencies": {
     "QuecLogKit": [],
     "QuecFoundationKit": []
