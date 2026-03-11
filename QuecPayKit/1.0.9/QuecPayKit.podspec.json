@@ -31,7 +31,7 @@
       "name": "default",
       "dependencies": {
         "QuecPayKit/common": []
-      },
+      }
     },
     {
       "name": "common",
@@ -48,3 +48,4 @@
   "swift_version": "5.0",
   "vendored_frameworks": "QuecPayKit/**/*.xcframework"
 }
+
