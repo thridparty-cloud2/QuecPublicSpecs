@@ -1,6 +1,6 @@
 {
   "name": "QuecPayKit",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "summary": "A short description of QuecPayKit.",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "http://gitlab.quectel.com:8108/frontend/app/QuecPayKit",
@@ -12,7 +12,7 @@
     "QUEC_CI": "cloud-cicd@quectel.com"
   },
   "source": {
-    "http": "http://quec-cicd-oss.oss-cn-shanghai.aliyuncs.com/xc/QuecPayKit1773210675.zip",
+    "http": "http://quec-cicd-oss.oss-cn-shanghai.aliyuncs.com/xc/QuecPayKit1773212263.zip",
     "type": "zip"
   },
   "platforms": {
@@ -40,7 +40,7 @@
     {
       "name": "paypal",
       "dependencies": {
-        "PayPal/PayPalWebPayments": [],
+        "PayPal": [],
         "QuecPayKit/common": []
       }
     }
@@ -48,4 +48,3 @@
   "swift_version": "5.0",
   "vendored_frameworks": "QuecPayKit/**/*.xcframework"
 }
-
