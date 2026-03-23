@@ -1,0 +1,2 @@
+# QuecPublicSpecs
+Quec Cocoapods Specs
