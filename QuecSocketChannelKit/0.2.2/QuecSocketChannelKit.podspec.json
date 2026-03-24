@@ -1,0 +1,37 @@
+{
+  "name": "QuecSocketChannelKit",
+  "version": "0.2.2",
+  "summary": "A short description of QuecSocketChannelKit.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "http://gitlab.quectel.com:8108/frontend/app/QuecSocketChannelKit",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "QUEC_CI": "cloud-cicd@quectel.com"
+  },
+  "source": {
+    "http": "http://quec-cicd-oss.oss-cn-shanghai.aliyuncs.com/xc/QuecSocketChannelKit1774323819.zip",
+    "type": "zip"
+  },
+  "platforms": {
+    "ios": "12.0"
+  },
+  "static_framework": true,
+  "dependencies": {
+    "CocoaAsyncSocket": [
+      "~> 7.6.5"
+    ],
+    "QuecFoundationKit": [],
+    "QuecCommonUtil": [],
+    "QuecLogKit": []
+  },
+  "pod_target_xcconfig": {
+    "EXCLUDED_ARCHS[sdk=iphonesimulator*]": "arm64"
+  },
+  "user_target_xcconfig": {
+    "EXCLUDED_ARCHS[sdk=iphonesimulator*]": "arm64"
+  },
+  "vendored_frameworks": "QuecSocketChannelKit/**/*.xcframework"
+}

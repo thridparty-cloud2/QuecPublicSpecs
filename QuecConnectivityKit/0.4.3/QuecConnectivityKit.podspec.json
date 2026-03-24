@@ -1,0 +1,37 @@
+{
+  "name": "QuecConnectivityKit",
+  "version": "0.4.3",
+  "summary": "A short description of QuecConnectivityKit.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/vic.huang/QuecConnectivityKit",
+  "license": {
+    "type": "None",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "vic.huang": "vic.huang@quectel.com"
+  },
+  "source": {
+    "http": "http://quec-cicd-oss.oss-cn-shanghai.aliyuncs.com/xc/QuecConnectivityKit1774328878.zip",
+    "type": "zip"
+  },
+  "swift_versions": "5.0",
+  "platforms": {
+    "ios": "12.0"
+  },
+  "static_framework": true,
+  "module_name": "QuecConnectivityKit",
+  "public_header_files": "QuecConnectivityKit/Classes/**/*.h",
+  "frameworks": [
+    "Network",
+    "UIKit"
+  ],
+  "swift_version": "5.0",
+  "vendored_frameworks": "QuecConnectivityKit/**/*.xcframework",
+  "pod_target_xcconfig": {
+    "EXCLUDED_ARCHS[sdk=iphonesimulator*]": "arm64"
+  },
+  "user_target_xcconfig": {
+    "EXCLUDED_ARCHS[sdk=iphonesimulator*]": "arm64"
+  }
+}
