@@ -1,0 +1,34 @@
+{
+  "name": "QuecBleChannelKit",
+  "version": "1.4.3-enboli",
+  "summary": "QuecBleChannelKit is ble channel kit",
+  "homepage": "https://www.quectel.com",
+  "license": "none",
+  "authors": {
+    "quectel.steven": "steven.xia@quectel.com"
+  },
+  "platforms": {
+    "ios": "12.0"
+  },
+  "source": {
+    "http": "http://quec-cicd-oss.oss-cn-shanghai.aliyuncs.com/xc/QuecBleChannelKit1782457588.zip",
+    "type": "zip"
+  },
+  "static_framework": true,
+  "dependencies": {
+    "QuecFoundationKit": [
+      "0.9.7"
+    ],
+    "QuecCommonUtil": [],
+    "QuecLogKit": [
+      "2.1.0"
+    ]
+  },
+  "pod_target_xcconfig": {
+    "EXCLUDED_ARCHS[sdk=iphonesimulator*]": "arm64"
+  },
+  "user_target_xcconfig": {
+    "EXCLUDED_ARCHS[sdk=iphonesimulator*]": "arm64"
+  },
+  "vendored_frameworks": "QuecBleChannelKit/**/*.xcframework"
+}
