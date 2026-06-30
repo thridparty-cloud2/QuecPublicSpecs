@@ -1,0 +1,50 @@
+{
+  "name": "QuecIpaSdk",
+  "version": "0.0.11",
+  "summary": "A short description of QuecIpaSdk.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "http://gitlab.quectel.com:8108/frontend/app/QuecIpaSdk",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "QUEC_CI": "cloud-cicd@quectel.com"
+  },
+  "source": {
+    "http": "http://quec-cicd-oss.oss-cn-shanghai.aliyuncs.com/xc/QuecIpaSdk1782808589.zip",
+    "type": "zip"
+  },
+  "platforms": {
+    "ios": "12.0"
+  },
+  "static_framework": true,
+  "swift_versions": "5.0",
+  "public_header_files": [
+    "QuecIpaSdk/Classes/QuecIpaSdk.h",
+    "QuecIpaSdk/Classes/QuecIpaService.h",
+    "QuecIpaSdk/Classes/QuecProfileInfoModel.h",
+    "QuecIpaSdk/Classes/QuecIpaRequestModel.h",
+    "QuecIpaSdk/Classes/QuecIpaHandleUtil.h"
+  ],
+  "private_header_files": [
+    "QuecIpaSdk/Include/**/*.h",
+    "QuecIpaSdk/Classes/QuecApduCommondUtils.h",
+    "QuecIpaSdk/Classes/QuecDataUtils.h",
+    "QuecIpaSdk/Classes/QuecIRequestpaManager.h"
+  ],
+  "vendored_libraries": "QuecIpaSdk/**/*.a",
+  "dependencies": {
+    "QuecLogKit": [],
+    "QuecFoundationKit": []
+  },
+  "libraries": "c++",
+  "pod_target_xcconfig": {
+    "EXCLUDED_ARCHS[sdk=iphonesimulator*]": "arm64"
+  },
+  "user_target_xcconfig": {
+    "EXCLUDED_ARCHS[sdk=iphonesimulator*]": "arm64"
+  },
+  "swift_version": "5.0",
+  "vendored_frameworks": "QuecIpaSdk/**/*.xcframework"
+}
