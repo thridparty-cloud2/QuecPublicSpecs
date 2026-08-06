@@ -26,22 +26,22 @@
   },
   "dependencies": {
     "QuecBleChannelKit": [
-      "2.1.0"
+      "2.0.9"
     ],
     "QuecCommonUtil": [
-      "1.0.3"
+      "1.0.2"
     ],
     "QuecConnectivityKit": [
       "0.4.3"
     ],
     "QuecDeviceKit": [
-      "2.2.7"
+      "2.2.6"
     ],
     "QuecFoundationKit": [
       "1.0.4"
     ],
     "QuecIotChannelKit": [
-      "0.9.6"
+      "0.9.3"
     ],
     "QuecLogKit": [
       "2.1.0"
@@ -50,13 +50,13 @@
       "0.1.2"
     ],
     "QuecNetworkChannelKit": [
-      "1.2.2"
+      "1.2.1"
     ],
     "QuecSdkConfig": [
-      "0.5.0"
+      "0.4.4"
     ],
     "QuecSmartConfigKit": [
-      "1.0.6"
+      "1.0.3"
     ],
     "QuecSocketChannelKit": [
       "0.2.2"
