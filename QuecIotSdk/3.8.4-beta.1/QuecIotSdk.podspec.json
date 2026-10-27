@@ -1,0 +1,84 @@
+{
+  "name": "QuecIotSdk",
+  "version": "3.8.4-beta.1",
+  "summary": "A short description of QuecIotSdk.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "http://gitlab.quectel.com:8108/frontend/app/QuecIotSdk",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "QUEC_CI": "cloud-cicd@quectel.com"
+  },
+  "source": {
+    "http": "https://quec-cicd-oss.oss-cn-shanghai.aliyuncs.com/xc/QuecIotSdk1793103799.zip",
+    "type": "zip"
+  },
+  "static_framework": true,
+  "platforms": {
+    "ios": "14.0"
+  },
+  "dependencies": {
+    "QuecBleChannelKit": [
+      "2.1.3-beta.1"
+    ],
+    "QuecCommonUtil": [
+      "1.0.4-beta.1"
+    ],
+    "QuecConnectivityKit": [
+      "0.4.4"
+    ],
+    "QuecDeviceKit": [
+      "2.3.0"
+    ],
+    "QuecFoundationKit": [
+      "1.0.5"
+    ],
+    "QuecIotChannelKit": [
+      "0.9.8"
+    ],
+    "QuecLogKit": [
+      "2.1.0"
+    ],
+    "QuecMQTTChannelKit": [
+      "0.1.2"
+    ],
+    "QuecNetworkChannelKit": [
+      "1.2.2"
+    ],
+    "QuecSdkConfig": [
+      "0.5.0"
+    ],
+    "QuecSmartConfigKit": [
+      "1.0.9"
+    ],
+    "QuecSocketChannelKit": [
+      "0.2.2"
+    ],
+    "QuecUserKit": [
+      "1.6.6"
+    ],
+    "QuecWebSocketChannelKit": [
+      "0.2.7"
+    ],
+    "QuecOTAUpgradeKit": [
+      "1.1.3"
+    ],
+    "YYModel": [
+      "1.0.4"
+    ]
+  },
+  "pod_target_xcconfig": {
+    "EXCLUDED_ARCHS[sdk=iphonesimulator*]": "arm64"
+  },
+  "user_target_xcconfig": {
+    "EXCLUDED_ARCHS[sdk=iphonesimulator*]": "arm64"
+  },
+  "vendored_frameworks": "QuecIotSdk/**/*.xcframework",
+  "resource_bundles": {
+    "QuecIotSdk": [
+      "QuecIotSdk/Assets/*"
+    ]
+  }
+}
