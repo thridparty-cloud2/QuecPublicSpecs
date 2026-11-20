@@ -1,0 +1,38 @@
+{
+  "name": "QuecUserKit",
+  "version": "1.7.0",
+  "summary": "QuecUserKit 账号管理组件，负责用户账号、消息与推送设置等能力。",
+  "description": "QuecUserKit 是移远账号管理组件，封装手机号/邮箱注册、登录、重置密码、用户信息\n与消息中心等接口，为上层业务提供统一的账号能力。",
+  "homepage": "https://www.quectel.com",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "quectel.steven": "steven.xia@quectel.com"
+  },
+  "source": {
+    "http": "https://quec-cicd-oss.oss-cn-shanghai.aliyuncs.com/xc/QuecUserKit1795164543.zip",
+    "type": "zip"
+  },
+  "platforms": {
+    "ios": "12.0"
+  },
+  "static_framework": true,
+  "dependencies": {
+    "QuecNetworkChannelKit": [],
+    "QuecSdkConfig": [],
+    "QuecFoundationKit": [],
+    "QuecLogKit": [],
+    "YYModel": [
+      "~>1.0.4"
+    ]
+  },
+  "pod_target_xcconfig": {
+    "EXCLUDED_ARCHS[sdk=iphonesimulator*]": "arm64"
+  },
+  "user_target_xcconfig": {
+    "EXCLUDED_ARCHS[sdk=iphonesimulator*]": "arm64"
+  },
+  "vendored_frameworks": "QuecUserKit/**/*.xcframework"
+}
